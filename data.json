@@ -1,12 +1,12 @@
 {
   "main": "Clouds",
-  "temp": 18.4,
-  "feels_like": 18.0,
-  "temp_min": 15.1,
-  "temp_max": 20.8,
-  "humidity": 62,
+  "temp": 4.5,
+  "feels_like": 0.6,
+  "temp_min": 2.8,
+  "temp_max": 6.1,
+  "humidity": 86,
   "visibility": 10000,
-  "windSpeed": 0.89,
-  "sunrise": "06:50:07",
-  "sunset": "20:04:39"
+  "windSpeed": 5.14,
+  "sunrise": "06:29:19",
+  "sunset": "20:20:03"
 }

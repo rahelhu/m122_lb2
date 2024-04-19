@@ -20,11 +20,31 @@
   <!-- - - - - - - - - - - - Kopfzeile Ende - - - - - - - - - - - -->
 
   <!-- - - - - - - - - - - - Inhalt Start - - - - - - - - - - - -->
+  
+  <div id="output"></div>
 
-  <p>
+  <script>
 
-  </p>
+    fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("output").innerHTML = 
+        `Main: ${data.main}<br>
+        Temperature: ${data.temp} °C<br>
+        Feels like: ${data.feels_like} °C<br>
+        Minimum temperature: ${data.temp_min} °C<br>
+        Maximum temperature: ${data.temp_max} °C<br>
+        Humidity: ${data.humidity} %<br>
+        Visibility: ${data.visibility} m<br>
+        Wind Speed: ${data.windSpeed} m/s<br>
+        Sunrise: ${data.sunrise}<br>
+        Sunset: ${data.sunset}<br>`;
+    })
+    .catch(error => console.error('Error:', error));
 
+  </script>
+  
+  
 
   <!-- - - - - - - - - - - - Inhalt Ende - - - - - - - - - - - -->
 

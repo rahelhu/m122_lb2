@@ -67,12 +67,13 @@ if response.status_code == requests.codes.ok:
 
     # convert into JSON:
     jsonData = json.dumps(data, indent=2)
-    print (jsonData)
+    #print (jsonData)
 
 
     #write in JSON-File
     datei = open('data.json','w') #w = write
     datei.write(jsonData)
+    datei.close()
 
 else:
     print("Error:", response.status_code, response.text)
