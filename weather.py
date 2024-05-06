@@ -1,4 +1,4 @@
-#author: 
+#author: Rahel Hüppi
 #date: 08.04.2024
 #version: 1.1
 #description: A weather-app that runs with an API.
@@ -68,8 +68,6 @@ if response.status_code == requests.codes.ok:
 
     # create Python-object 
     data = {
-        #"city": city,
-        #"country": country,
         "main": main,
         "temp": temp,
         "feels_like": feels_like,
@@ -84,7 +82,6 @@ if response.status_code == requests.codes.ok:
 
     # convert into JSON:
     jsonData = json.dumps(data, indent=2)
-    #print (jsonData)
 
 
     #write in JSON-File
